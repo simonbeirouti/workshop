@@ -29,3 +29,4 @@ dist-ssr
 public/workers
 
 target
+.env

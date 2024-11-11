@@ -1,10 +1,13 @@
-import { defineConfig } from "@junobuild/config";
+import {defineConfig} from '@junobuild/config';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 /** @type {import('@junobuild/config').JunoConfig} */
 export default defineConfig({
   satellite: {
-    // TODO: STEP_1_CONFIGURATION
-    id: "replace-satellite-id",
-    source: "dist",
-  },
+    id: process.env.JUNO_ID,
+    source: 'dist',
+    predeploy: ['npm run build']
+  }
 });

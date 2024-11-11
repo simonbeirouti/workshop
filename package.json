@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@junobuild/core": "^0.0.58",
+    "@lottiefiles/dotlottie-react": "^0.9.3",
+    "dotenv": "^16.4.5",
     "nanoid": "^5.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
