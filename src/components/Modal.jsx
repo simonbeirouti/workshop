@@ -59,9 +59,9 @@ export const Modal = () => {
           },
         },
       });
-      
+
       setShowModal(false);
-      
+
       reload();
     } catch (err) {
       console.error(err);

@@ -2,7 +2,6 @@ import { authSubscribe } from "@junobuild/core";
 import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
 import { Login } from "./Login";
-import { Logout } from "./Logout";
 
 export const AuthContext = createContext();
 
@@ -19,8 +18,6 @@ export const Auth = ({ children }) => {
       {user !== undefined && user !== null ? (
         <div>
           {children}
-
-          <Logout />
         </div>
       ) : (
         <Login />

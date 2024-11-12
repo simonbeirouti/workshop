@@ -3,7 +3,7 @@ import { Button } from "./Button";
 
 export const Logout = () => {
   return (
-    <div className="fixed top-4 right-4 z-50">
+    <div className="fixed top-0 right-4">
       <Button onClick={signOut}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

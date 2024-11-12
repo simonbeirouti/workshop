@@ -1,8 +1,9 @@
 import { initSatellite } from "@junobuild/core";
 import { useEffect } from "react";
 import { Auth } from "./components/Auth";
-import { Modal } from "./components/Modal";
-import { Table } from "./components/Table";
+import { Footer } from "./components/Footer";
+import { Lobby } from "./components/Lobby";
+import { Header } from "./components/Header";
 
 function App() {
   useEffect(() => {
@@ -13,12 +14,12 @@ function App() {
 
   return (
     <>
-      <div className="relative isolate min-h-[100dvh]" >
+      <div className="relative isolate min-h-[100dvh]">
         <main className="mx-auto max-w-screen-2xl py-16 px-8 md:px-24 tall:min-h-[calc(100dvh-128px)]">
           <Auth>
-            <Table />
-            
-            <Modal />
+            <Header />
+            <Lobby />
+            <Footer />
           </Auth>
         </main>
       </div>

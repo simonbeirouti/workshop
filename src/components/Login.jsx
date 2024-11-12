@@ -29,5 +29,9 @@ export const Login = () => {
     );
   }
 
-  return <Button onClick={signIn}>Sign in</Button>;
+  return (
+    <div className="fixed inset-0 flex items-center justify-center w-1/2 mx-auto">
+      <Button onClick={signIn}>Sign in</Button>
+    </div>
+  );
 };
