@@ -1,24 +1,50 @@
-# Juno: Workshop
-
-![A screenshot of the example developed during the workshop](https://raw.githubusercontent.com/junobuild/create-juno/main/screenshots/screenshot-example.png)
-
-This repository provides code samples and instructions to guide attendees in discovering Juno during a workshop.
-
-## Getting Started
+# Betta UX
 
 Clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/junobuild/workshop
+git clone https://github.com/simonbeirouti/workshop
 cd workshop
 npm ci
 ```
 
-## Workshop
+Run the project:
 
-We are developing a note-taking app, and the core functionality is already in place. However, we still need to integrate Juno, which we plan to implement during the workshop.
+```bash
+npm run dev
+```
 
-By following the steps below and replacing the provided snippet, we will be able to implement the app and learn about building on Web3 simultaneously.
+Run the project:
+
+```bash
+npm run dev
+```
+
+You can reference the file lib/functions.js for the Juno calls and the datastores.js for data examples. 
+
+### Deployment
+
+Deploying the project is as simple as:
+
+Setting up Juno:
+
+```bash
+npm i -g @junobuild/cli
+```
+
+Once the installation is complete, we log in to grant access from our terminal to our satellite.
+
+```bash
+juno login
+```
+
+Finally, we deploy our project.
+
+```bash
+juno deploy
+```
+
+Congratulations! Your dApp has been launched on chain 🎉.
 
 ---
 
@@ -172,27 +198,3 @@ await setDoc({
 ```
 
 ---
-
-### Deployment
-
-After we have developed and built our application, we can launch it.
-
-We recommend using [GitHub Actions](https://juno.build/docs/guides/github-actions) to continuously deploy real applications, but for the sake of this workshop, we will do this manually. That means we need to install the Juno CLI.
-
-```bash
-npm i -g @junobuild/cli
-```
-
-Once the installation is complete, we log in to grant access from our terminal to our satellite.
-
-```bash
-juno login
-```
-
-Finally, we deploy our project.
-
-```bash
-juno deploy
-```
-
-Congratulations! Your dApp has been launched on chain 🎉.
